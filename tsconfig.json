@@ -1,14 +1,29 @@
 {
-    "compilerOptions": {
-      "sourceMap": true,
-      "target": "es2017",
-      "outDir": "./dist",
-      "baseUrl": "./src"
-    },
-    "include": [
-      "src/**/*.ts"
+  "compilerOptions": {
+    "target": "es2016", /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'. */
+    "module": "commonjs", /* Specify module code generation: 'commonjs', 'amd', 'system', 'umd' or 'es2015'. */
+    "lib": [
+      "es2017",
+      "dom"
     ],
-    "exclude": [
-      "node_modules"
-    ]
-  }
+    "declaration": true, /* Generates corresponding '.d.ts' file. */
+    "sourceMap": true,
+    "outDir": "./dist/", /* Redirect output structure to the directory. */
+    "rootDir": "./src/",
+    "strict": false,
+    "typeRoots": [
+      "./types/"
+    ],
+    "types": ["node"],
+    "inlineSourceMap": false
+  },
+  "include": [
+    "./src/**/*",
+    "./types/**/*"
+  ],
+  "exclude": [
+    "**/*.spec.*",
+    "**/__snapshots__/*",
+    "node_modules"
+  ]
+}

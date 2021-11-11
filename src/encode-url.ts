@@ -2,11 +2,7 @@ import { AthenaExpress } from "athena-express";
 import * as AWS from "aws-sdk";
 // const AthenaExpress = require("athena-express"),
 // AWS = require("aws-sdk"),
-const awsCredentials = {
-    region: "us-east-1",
-    accessKeyId: "AKIA3OIAWC27QTFZQFHR",
-    secretAccessKey: "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"
-};
+const awsCredentials = {};
 
 AWS.config.update(awsCredentials);
 
