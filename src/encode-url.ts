@@ -4,7 +4,9 @@ const AthenaExpress = require("athena-express");
 var AWS = require("aws-sdk");
 // const AthenaExpress = require("athena-express"),
 // AWS = require("aws-sdk"),
-const awsCredentials = {};
+const awsCredentials = {
+    region: "us-east-1",
+};
 
 AWS.config.update(awsCredentials);
 
