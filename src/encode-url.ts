@@ -1,7 +1,7 @@
-import { AthenaExpress } from "athena-express";
-import * as AWS from "aws-sdk";
-// const AthenaExpress = require("athena-express");
-// var AWS = require("aws-sdk");
+// import { AthenaExpress } from "athena-express";
+// import * as AWS from "aws-sdk";
+const AthenaExpress = require("athena-express");
+var AWS = require("aws-sdk");
 // const AthenaExpress = require("athena-express"),
 // AWS = require("aws-sdk"),
 const awsCredentials = {
