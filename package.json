@@ -35,6 +35,7 @@
     "aws-sdk": "^2.1020.0",
     "encoding-utilities": "^1.0.1",
     "express": "^4.17.1",
+    "npm": "^8.5.0",
     "ts-node": "^10.4.0",
     "typescript": "^4.4.4"
   },
