@@ -1,7 +1,7 @@
-// import { AthenaExpress } from "athena-express";
-// import * as AWS from "aws-sdk";
-const AthenaExpress = require("athena-express");
-var AWS = require("aws-sdk");
+import { AthenaExpress } from "athena-express";
+import * as AWS from "aws-sdk";
+// const AthenaExpress = require("athena-express");
+// var AWS = require("aws-sdk");
 // const AthenaExpress = require("athena-express"),
 // AWS = require("aws-sdk"),
 const awsCredentials = {
@@ -12,7 +12,7 @@ AWS.config.update(awsCredentials);
 
 const athenaExpressConfig = {
     aws: AWS,
-    s3: "s3://harsha-test-athena/",
+    s3: "s3://ahtena-query-results/",
     getStats: true
 };
 
@@ -21,8 +21,8 @@ const athenaExpress = new AthenaExpress(athenaExpressConfig);
 //Invoking a query on Amazon Athena
 const getUrl = (async () => {
     let myQuery = {
-        sql: "SELECT * FROM final_test_harsha limit 10;",
-        db: "myfirstdb",
+        sql: "SELECT * FROM tb_first_stream limit 10;",
+        db: "firststream",
         pagination: 10
     };
 
