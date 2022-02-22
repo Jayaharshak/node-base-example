@@ -15,7 +15,7 @@ app.get("/test", async (req, res) => {
 
 app.get("/getUrl", async (req, res) => {
   console.log("******getUrl call getting initiated*******");
-  const url = await getUrl();
+  const url = getUrl();
   res.send(url);
 });
 
