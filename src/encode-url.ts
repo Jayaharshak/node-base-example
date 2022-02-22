@@ -21,7 +21,7 @@ const athenaExpress = new AthenaExpress(athenaExpressConfig);
 //Invoking a query on Amazon Athena
 const getUrl = (async () => {
     let myQuery = {
-        sql: "SELECT * FROM tb_first_stream limit 10;",
+        sql: `SELECT * FROM tb_first_stream WHERE firstcode in ('5d8860652182cc411d5b0335');`,
         db: "firststream",
         pagination: 10
     };
